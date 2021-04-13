@@ -1,0 +1,47 @@
+@charset "utf-8";
+ 
+#entete
+{
+    background-color:transparent;
+    text-align: center;
+}
+ 
+.left
+      {
+           float:left; margin:0 10px 0 20px;
+      }
+ 
+.navigation, .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0
+}
+.navigation li {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+}
+.navigation a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #555;
+}
+.navigation ul {
+    left: -999em;
+    position:absolute;
+    }
+.navigation li:hover > ul {
+    left: 0
+}
+.navigation li li:hover > ul {
+    left: 150px;
+    top: 0
+}
+.navigation a:hover {
+    color: #666;
+    background: #ccc
+}
